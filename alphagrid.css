@@ -1,0 +1,181 @@
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: radial-gradient(rectangle at 50% 0,
+        rgba(255,0,0,.5),
+        rgba(255,0,0,0) 70.71%),
+      radial-gradient(circle at 6.7% 75%,
+        rgba(0,0,255,.5),
+        rgba(0,0,255,0) 70.71%),
+      radial-gradient(circle at 93.3% 75%,
+        rgba(0,255,0,.5),
+        rgba(0,255,0,0) 70.71%) beige;
+  border-radius: 50%; 
+    }
+    
+    #top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #boardcontainer {
+        height: 100vmax;
+        width: 60vw;
+    }
+    
+    div#memory_board {
+        background-color: rgb(152, 236, 16);
+        border: rgb(248, 144, 9) 1px solid;
+        box-shadow: 0 3px 6px rgba(236, 15, 15, 0.993), 0 3px 6px rgba(0, 0, 0, 0.23);
+        padding: 24px;
+        height: 80%;
+        width: 70%;
+        margin: 20px auto;
+    }
+    
+    .divcontainer {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 25%;
+        width: 25%;
+        padding: 2%;
+    }
+    
+    .tile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200%;
+        background-color:cyan;
+        border: rgba(230, 11, 11, 0.924) 1px solid;
+        border-radius: 15px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    #clear {
+        clear: both;
+    }
+    
+    @media (min-width:320px) {
+       
+        #boardcontainer {
+            height: 100vh;
+            width: 100vw;
+        }
+        div#memory_board {
+            height: 50%;
+            width: 100%;
+        }
+        .tile {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+    }
+    
+    @media (min-width:480px) {
+            #boardcontainer {
+            height: 100vh;
+            width: 100vw;
+        }
+        div#memory_board {
+            height: 60%;
+            width: 90%;
+        }
+        .tile {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+    }
+    
+    @media (min-width:600px) {
+       
+        #boardcontainer {
+            height: 100vh;
+            width: 80vw;
+        }
+        div#memory_board {
+            height: 60%;
+            width: 100%;
+        }
+    }
+    
+    @media only screen (min-width:600px) and (orientation: landscape) {
+       
+        #boardcontainer {
+            height: 100vh;
+            width: 50vw;
+        }
+        div#memory_board {
+            height: 60%;
+            width: 100%;
+        }
+    }
+    
+    @media (min-width:801px) {
+      
+        #boardcontainer {
+            height: 100vh;
+            width: 70vw;
+        }
+        div#memory_board {
+            height: 80%;
+            width: 70%;
+        }
+    }
+    
+    @media only screen (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+        
+        #boardcontainer {
+            height: 100vh;
+            width: 85vw;
+        }
+        div#memory_board {
+            height: 60%;
+            width: 90%;
+        }
+    }
+    
+    @media (min-width:1025px) {
+        }
+    
+    @media (min-width:1281px) {
+        .tile{
+            font-size: 300%;
+            border-radius: 20px;
+        }
+    }
+    
+    button {
+        border-radius: 15px;
+        outline: none;
+        color: rgb(224, 42, 18);
+        font-weight: 800;
+        font-family: sans-serif;
+        text-align: center;
+        border: 0;
+        height: 40%;
+        width: 55%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        background-color: rgb(240, 219, 35);
+    }
+
+
+    #mode{
+        color: rgb(224, 42, 18);
+        font-weight: 900;
+        font-size: 150%;
+        text-align: center;
+        font-family: sans-serif;
+        border: 0;
+        height: 40%;
+        width: 120%;
+        border-radius: 15px;
+        background-color: rgb(96, 246, 69);
+    }
